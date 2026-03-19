@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Harsh Khestika - Full Stack Developer Portfolio. Specializing in React, Node.js, and modern web technologies.">
+<meta name="keywords" content="Full Stack Developer, React Developer, JavaScript Engineer, Web Development">
+<meta name="author" content="Harsh Khestika">
+
+<title>Harsh Khestika | Full Stack Developer</title>
+
+<link rel="icon" type="image/jpeg" href="assets/harsh.jpg">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#home">&lt;HK /&gt;</a>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="wave">👋</span>
+                    <span>Available for opportunities</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Harsh Khestika</span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                
+                <p class="hero-description">
+                    Crafting digital experiences with clean code and modern technologies. 
+                    Passionate about building scalable web applications that make a difference.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View Projects
+                    </a>
+                    <a href="assets/certificate/Harsh Khestika-CV.pdf"   class="btn btn-outline" target="_blank">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://github.com/harshkhestika" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/harshkhestika" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hkhestika@example.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                        <span class="code-title">developer.js</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Harsh Khestika"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Full Stack Developer"</span>,
+  <span class="code-property">skills</span>: [
+    <span class="code-string">"React.js"</span>,
+    <span class="code-string">"Node.js"</span>,
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"MongoDB"</span>
+  ],
+  <span class="code-property">passion</span>: <span class="code-string">"Building great products"</span>,
+  <span class="code-function">code</span>: <span class="code-keyword">function</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Clean & Scalable"</span>;
+  }
+};</code></pre>
+                    </div>
+                </div>
+                
+                <div class="floating-badges">
+                    <span class="tech-badge" style="--delay: 0s;">React</span>
+                    <span class="tech-badge" style="--delay: 0.5s;">Node.js</span>
+                    <span class="tech-badge" style="--delay: 1s;">MongoDB</span>
+                    <span class="tech-badge" style="--delay: 1.5s;">JavaScript</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-wrapper">
+                        <div class="profile-gradient"></div>
+                        <div class="profile-placeholder">
+                            <img src="assets/harsh.jpg" alt="Harsh Khestika" class="profile-img">
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate <strong>Full Stack Developer</strong> with expertise in building modern web applications. 
+                        I love turning complex problems into elegant, user-friendly solutions using cutting-edge technologies.
+                    </p>
+                    
+                    <p class="about-description">
+                        With a strong foundation in both frontend and backend development, I create seamless digital experiences 
+                        that combine beautiful design with robust functionality. My goal is to write clean, maintainable code 
+                        that scales and performs efficiently.
+                    </p>
+                    
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-info">
+                            <h3>Bachelor of Technology (B.Tech) in Computer Science</h3>
+                            <p>Focused on software development, data structures, and modern web technologies.</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="strengths">
+                        <div class="strength-card">
+                            <div class="strength-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Problem Solving</h4>
+                            <p>Breaking down complex challenges into elegant solutions</p>
+                        </div>
+                        
+                        <div class="strength-card">
+                            <div class="strength-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Clean Code</h4>
+                            <p>Writing maintainable, scalable, and readable code</p>
+                        </div>
+                        
+                        <div class="strength-card">
+                            <div class="strength-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4>Full Stack</h4>
+                            <p>End-to-end development from database to UI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section class="skills section" id="skills">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">My Expertise</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">
+                I work with modern technologies across frontend, backend, and databases to build scalable, efficient, and user-friendly web applications.
+            </p>
+        </div>
+
+        <div class="skills-categories">
+
+            <!-- Languages -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <i class="fas fa-code"></i>
+                    Languages
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon">☕</div>
+                        <div class="skill-name">Java</div>
+                        <p class="skill-description">
+                            Strong understanding of object-oriented programming using Java. Experience building scalable applications, implementing data structures, and developing efficient backend logic with clean and maintainable code practices.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🟨</div>
+                        <div class="skill-name">JavaScript</div>
+                        <p class="skill-description">
+                            Skilled in JavaScript for building dynamic and interactive web applications. Experience working with DOM manipulation, asynchronous programming, and modern frameworks to create responsive user experiences.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🐘</div>
+                        <div class="skill-name">PHP</div>
+                        <p class="skill-description">
+                            Experience developing server-side applications using PHP. Built authentication systems, database integrations, and dynamic web platforms with secure and optimized backend functionality.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <i class="fas fa-palette"></i>
+                    Frontend
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-name">HTML5</div>
+                        <p class="skill-description">
+                            Proficient in creating structured and semantic web pages using HTML5. Skilled in building responsive layouts and ensuring accessibility and SEO-friendly website structure.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-name">CSS3</div>
+                        <p class="skill-description">
+                            Strong knowledge of CSS3 for designing modern and responsive web interfaces. Experienced in layouts, animations, transitions, and styling techniques for visually appealing designs.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">💨</div>
+                        <div class="skill-name">Tailwind CSS</div>
+                        <p class="skill-description">
+                            Experience using Tailwind CSS utility-first framework to rapidly design responsive and modern UI components with clean and maintainable styling.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">⚛️</div>
+                        <div class="skill-name">React.js</div>
+                        <p class="skill-description">
+                            Experience building component-based web applications using React. Skilled in managing state, routing, and creating fast and scalable user interfaces.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <i class="fas fa-server"></i>
+                    Backend
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🟢</div>
+                        <div class="skill-name">Node.js</div>
+                        <p class="skill-description">
+                            Experience developing backend services using Node.js. Skilled in building REST APIs, handling asynchronous operations, and integrating databases for scalable web applications.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🚂</div>
+                        <div class="skill-name">Express.js</div>
+                        <p class="skill-description">
+                            Experienced in building server-side applications using Express.js framework. Implemented routing, middleware, and RESTful APIs to support modern web applications.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <i class="fas fa-database"></i>
+                    Databases
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🍃</div>
+                        <div class="skill-name">MongoDB</div>
+                        <p class="skill-description">
+                            Experience working with MongoDB for NoSQL database management. Skilled in creating schemas, managing collections, and handling data efficiently in modern web applications.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🐬</div>
+                        <div class="skill-name">MySQL</div>
+                        <p class="skill-description">
+                            Strong knowledge of relational databases using MySQL. Experienced in writing complex SQL queries, database design, normalization, and managing structured data.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Core CS -->
+            <div class="skill-category">
+                <h3 class="category-title">
+                    <i class="fas fa-laptop-code"></i>
+                    Core Computer Science
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon">💾</div>
+                        <div class="skill-name">DBMS</div>
+                        <p class="skill-description">
+                            Understanding of database management systems including data modeling, normalization, indexing, and transaction management for efficient database performance.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-name">SQL</div>
+                        <p class="skill-description">
+                            Skilled in writing SQL queries for data retrieval, filtering, aggregation, and managing relational databases effectively.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">🎯</div>
+                        <div class="skill-name">OOP</div>
+                        <p class="skill-description">
+                            Strong understanding of object-oriented programming concepts including inheritance, encapsulation, polymorphism, and abstraction for building modular and reusable software systems.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some things I've built recently</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card" data-color="purple">
+        <div class="project-number">01</div>
+        <div class="project-banner purple-gradient">
+            <img src="assets/vrtech.jpg" alt="VR Project" class="project-img">
+            
+        </div>
+
+        <div class="project-content">
+            <h3 class="project-title">VR Tech Solution Website</h3>
+            <p class="project-description">
+                A modern website for a VR technology solutions company featuring immersive design,
+                product showcases, and interactive elements that bring virtual reality experiences to life.
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React.js</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Harshkhestika/vrtechsolutions" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://vrtechsolution.in/" class="project-link primary" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Project 2 -->
+     <div class="project-card" data-color="pink">
+        <div class="project-number">02</div>
+        <div class="project-banner pink-gradient">
+            <img src="assets/crafting.jpg" alt="Ecommerce Project" class="project-img">
+            
+        </div>
+        <div class="project-content">
+            <h3 class="project-title">Crafting-Sign Wedding E-Commerce</h3>
+            <p class="project-description">
+                A full-featured e-commerce platform for custom wedding card designs with cart functionality,
+                secure payment integration, and comprehensive order management system.
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Harshkhestika/CraftIng_Sign" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://craftingsign.com/" class="project-link primary" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- Project 3 -->
+    <div class="project-card" data-color="cyan">
+        <div class="project-number">03</div>
+        <div class="project-banner cyan-gradient">
+            <img src="assets/AI-Chatbot.jpg" alt="AI Chatbot Project" class="project-img">
+        </div>
+        <div class="project-content">
+            <h3 class="project-title">AI Symptom Checker Chat</h3>
+            <p class="project-description">
+                An intelligent AI-powered chatbot that analyzes user symptoms and provides preliminary
+                health insights using natural language processing and machine learning algorithms.
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Harshkhestika/AI-Symptom-Checker-Chat-Bot" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <!-- <a href="https://linkedin.com/in/harshkhestika" class="project-link primary" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                </a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- project 04 -->
+    <div class="project-card" data-color="purple">
+        <div class="project-number">04</div>
+        <div class="project-banner purple-gradient">
+            <img src="assets/techsure.jpg" alt="techsure Project" class="project-img">
+            
+        </div>
+
+        <div class="project-content">
+            <h3 class="project-title">Techsure Solution Website</h3>
+            <p class="project-description">
+                A modern responsive website for Techsure Solution that showcases technology services, innovative solutions, and company products through a clean interface, interactive design, and optimized performance.
+
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React.js</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Harshkhestika/Chittorgarh-TechSure" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://chittorgarh-techsure.onrender.com/" class="project-link primary" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience/Certifications Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Journey</span>
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <p class="section-subtitle">Continuous learning and professional development</p>
+            </div>
+            
+            <div class="certifications-grid">
+                <!-- Certification 1 -->
+<div class="cert-card" data-color="blue">
+
+    <div class="cert-icon blue-gradient">
+        <i class="fas fa-cloud"></i>
+    </div>
+
+    <a href="assets/certificate/cloud-computing.pdf" target="_blank">
+        <div class="cert-badge">NPTEL Certified Visit</div>
+    </a>
+
+    <h3 class="cert-title">Cloud Computing</h3>
+
+    <p class="cert-issuer">
+        <i class="fas fa-university"></i>
+        NPTEL
+    </p>
+
+    <p class="cert-description">
+        Comprehensive course covering cloud architecture, services,
+        virtualization, and modern cloud deployment models.
+    </p>
+</div>
+
+
+
+<!-- Certification 2 -->
+<div class="cert-card" data-color="orange">
+
+    <div class="cert-icon orange-gradient">
+        <i class="fas fa-coffee"></i>
+    </div>
+
+    <a href="assets/certificate/Java-GUI.pdf" target="_blank">
+        <div class="cert-badge">CSE Pathshala Certified Visit</div>
+    </a>
+
+    <h3 class="cert-title">Java with GUI</h3>
+
+    <p class="cert-issuer">
+        <i class="fas fa-chalkboard-teacher"></i>
+        CSE Pathshala
+    </p>
+
+    <p class="cert-description">
+        Advanced Java programming course focusing on GUI development
+        using Swing and JavaFX frameworks.
+    </p>
+
+</div>
+
+
+
+<!-- Certification 3 -->
+<div class="cert-card" data-color="darkblue">
+
+    <div class="cert-icon darkblue-gradient">
+        <i class="fas fa-laptop-code"></i>
+    </div>
+
+    <a href="assets/certificate/udemy.pdf" target="_blank">
+        <div class="cert-badge">Udemy Certified Visit</div>
+    </a>
+
+    <h3 class="cert-title">Web Development Bootcamp</h3>
+
+    <p class="cert-issuer">
+        <i class="fas fa-building"></i>
+        Udemy
+    </p>
+
+    <p class="cert-description">
+        Completed a comprehensive web development course covering
+        HTML, CSS, JavaScript, responsive design, and modern frontend
+        development practices.
+    </p>
+
+</div>
+
+
+
+<!-- Certification 4 -->
+<div class="cert-card" data-color="green">
+
+    <div class="cert-icon green-gradient">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <a href="assets/certificate/Infosys-ChatGPT-4.pdf" target="_blank">
+        <div class="cert-badge">Infosys Certified Visit</div>
+    </a>
+
+    <h3 class="cert-title">ChatGPT-4 & AI Tools</h3>
+
+    <p class="cert-issuer">
+        <i class="fas fa-building"></i>
+        Infosys Springboard
+    </p>
+
+    <p class="cert-description">
+        Certification on ChatGPT-4 and AI productivity tools focusing
+        on prompt engineering, automation workflows, and practical AI
+        usage in software development.
+    </p>
+
+</div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section class="github section" id="github">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Open Source</span>
+                <h2 class="section-title">GitHub Activity</h2>
+                <p class="section-subtitle">Recent repositories and contributions</p>
+            </div>
+            
+            <div id="githubRepos" class="github-grid">
+                <!-- Loading skeleton -->
+                <div class="repo-skeleton"></div>
+                <div class="repo-skeleton"></div>
+                <div class="repo-skeleton"></div>
+                <div class="repo-skeleton"></div>
+                <div class="repo-skeleton"></div>
+                <div class="repo-skeleton"></div>
+            </div>
+            
+            <div class="github-footer">
+                <a href="https://github.com/harshkhestika" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    View GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's build something amazing together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <h3>Let's talk about your project</h3>
+                        <p>
+                            I'm currently open to new opportunities. Whether you have a project in mind, 
+                            want to collaborate, or just want to connect, feel free to reach out!
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Email</h4>
+                                <a href="mailto:harsh@example.com">hkhestika@example.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Location</h4>
+                                <p>Lovely Professional University, Punjab (India)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Connect with me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/harshkhestika" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/harshkhestika" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:hkhestika@example.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <input type="hidden" name="access_key" value="ed573845-ba48-4272-8d1b-d05dd221bbc9">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="form-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="form-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="form-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="form-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                        
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Message sent successfully! I'll get back to you soon.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <a href="#home">&lt;HK /&gt;</a>
+                    </div>
+                    <p class="footer-copyright">
+                        © 2026 Harsh Khestika. All rights reserved.
+                    </p>
+                </div>
+                
+                <div class="footer-center">
+                    <ul class="footer-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-social">
+                        <a href="https://github.com/harshkhestika" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/harshkhestika" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:hkhestika@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
